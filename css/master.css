@@ -1,0 +1,193 @@
+.bac{
+    background-color: #934e25;
+}
+.border{
+    border: #672600;
+}
+.poooooooo{
+  color: #934e25;
+}
+body{
+    margin-top: 75px;
+}
+.f-800{
+  font-weight: 800px;
+}
+
+/* =============================heder======================  */
+.navbar{
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+/* =====================end heder================================  */
+/* ===============bgshow============================================  */
+#bgshow{
+    position: relative;
+    min-height: 750px;
+    background: url(../img/kt-coffee-intro-bg-min.jpg);
+   object-fit: cover;
+   >.bgshow-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+ 
+    >.container{
+ >.row{
+>.col-lg-12{
+    >h1{
+        margin-top: 10%;
+    }
+    >p{
+        margin-bottom: 3%;
+    }
+    >a{
+    
+    }
+    } 
+    
+  }
+    }
+   }
+ 
+}
+/* ============================end bgshow=============================================  */
+.img-4{
+ 
+}
+/* =============================box=========================================  */
+
+.fontsiezicon{
+    font-size: 20px;
+}
+/* =============================end box=======================================  */
+/* =============================bck2=======================================  */
+  #bgbac{
+      position: relative;
+    min-height: 700px;
+    background: url(../img/kt-coffee-about-bgd-min.jpg);
+   object-fit: cover;
+   background-position: center;
+   >.bgbck-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    >.container{
+        >.row{
+            >.col-lg-12{
+                >h1{
+                    margin-top: 10%;
+                }
+                >p{}
+                >a{
+
+                }
+            }
+        }
+    }
+  }
+}
+/* ====================================end bck2=========================================  */
+/* ====================================question=========================================  */
+
+  /* وسط چین واقعی متن سوال */
+  #accordion .accordion-button{
+    display: flex;
+    justify-content: center; /* متن وسط */
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  /* فلش accordion را از وسط خارج می‌کنیم که متن دقیقاً وسط بماند */
+  #accordion .accordion-button::after{
+    position: absolute;
+    right: 1rem;      /* چون dir شما معلوم نیست؛ اگر RTL داری این مقدار را مناسب تنظیم کن */
+    left: auto;
+    margin: 0 !important;
+  }
+
+  .custom-center-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100%; /* اطمینان از اینکه کل عرض را می‌گیرد */
+    position: relative; /* برای قرارگیری درست آیکن */
+  }
+
+  /* برای اینکه فلش به هم نریزد */
+  .custom-center-button::after {
+    position: absolute;
+    right: 1rem; /* یا هر فاصله‌ای که دوست داری */
+    margin-left: 0; /* اطمینان از اینکه margin اضافه ندارد */
+  }
+
+  /* وقتی بسته است */
+  .custom-center-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+  }
+  /* ==============================end question=========================================  */
+  /* ==============================comments=========================================  */
+  #comments  img{
+    margin-top: -55px;
+  }
+  /* ================================end comments==================================  */
+
+@media screen and (min-width:768px) {
+   .mb-input{
+    margin-bottom: 10px;
+   }
+}
+/* //////////////////////////////////////////////////////////////////////  */
+
+
+.image-container {
+  width: 300px; 
+  height: 300px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+   border-radius: 15px;
+}
+
+.social-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.421);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+   border-radius: 15px;
+}
+
+.image-container:hover .social-overlay {
+  opacity: 1;
+}
+
+/* این بخش مهم است: استفاده از flex برای چیدن کنار هم */
+.social-links {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.social-links a {
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
